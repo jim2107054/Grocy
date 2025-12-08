@@ -1,0 +1,11 @@
+import { Connection } from "mongoose";
+
+//custom types for global usage
+declare global {
+    var mongoose: {
+        conn : Connection | null;
+        promise : Promise<Connection> | null;
+    }
+}
+
+export {};
